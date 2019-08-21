@@ -21,14 +21,13 @@
                     <ul id="navList">
                         <li><a href="linkedIn.com">linkedIn</a></li>
                         <li class="navSeparator"> / </li>
-                        <li><a href="/">hello@cadencewatson.com</a></li>
+                        <li><a href="/contact">contact me</a></li>
                     </ul>
                 </nav>
         </header>
 
         <section class="hero">
-            <div id="heroIMG">
-                
+            <div id="heroIMG">  
                 <p id="heroText">data visualization</p>
             </div>
         </section>
@@ -48,15 +47,5 @@
             </div>
         </section>
 
-        <section id="skills">
-            <div id="skillsTitle">
-                <h2 class="subTitle">Skills</h2>
-                <p class="copy">Services I have to offer</p>
-            </div>
-            <div id="skillsDisplay">
-                <img id="skillsChart" src="images/skills.svg">
-                <div id="chartCover"></div>
-            </div>
-        </section>
     </body>
 </html>
