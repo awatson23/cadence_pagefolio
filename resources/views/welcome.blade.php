@@ -40,7 +40,7 @@
                 <p class="copy">design and development</p>
             </div>
             <div id="projGridDiv">
-                <div class="projGrid">1</div>
+                <div class="projGrid"><div id="projBG1"><div class="projText">IECS Data Visualiation</div></div></div>
                 <div class="projGrid">2</div>
                 <div class="projGrid">3</div>
                 <div class="projGrid">4</div>
