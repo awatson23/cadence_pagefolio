@@ -27,8 +27,10 @@
         </header>
 
         <section class="hero">
-            <div id="heroIMG">  
-                <p id="heroText">data visualization</p>
+            <div id="heroIMG"> 
+                <p id="heroText">Putting together stories with data</p>
+                    <div id="heroTextBox">
+                    </div> 
             </div>
         </section>
 

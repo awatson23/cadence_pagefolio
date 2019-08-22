@@ -71,9 +71,32 @@ a {
 }
 
 #heroIMG {
-    background-color: black;
     height: 100%;
     width: 100%;
+    background-image: url("/images/bg_image.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+#heroTextBox {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+}
+
+#heroText {
+    opacity: 1;
+    z-index: 2;
+    width: 40%;
+    text-align: center;
+    font-size: 5rem;
+    position: absolute;
+    left: 28vw;
+    top: 37vh;
+    color: white;
+    font-weight: semi-bold;
+
 }
 
 /*projects section*/
@@ -115,51 +138,30 @@ a {
     padding: 1vh;
 }
 
- /*skills section*/
+/*contact page*/
 
-#skills {
+#formCon {
+    width: 70%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 5%;
 }
 
-/*skills section*/ 
-
-#skillsTitle {
-    width: 100%;
-    height: 20vh;
-    text-align: center;
-    margin-top: 5vh;
+.form-div label {
+    padding-bottom: 1%;
 }
 
-#skillsDisplay {
-    height: 80vh;
-    width: 100%;
+#contactBlurbDiv {
+    display: hidden;
 }
 
-#skillsChart {
-    height: 100%;
-    margin-left: 10vw;
-    position: absolute;
-}
-
-#chartCover {
-    background-color: white;
-    width: 65%;
-    height: 120%;
-    position: relative;
-    z-index: 3;
-    top: 0%;
-    left: 20vw;
-    transition: all 1s linear;
-}
-
-#chartCover:hover {
-    width: 0%;
-    height: 120%;
-    position: relative;
-    z-index: 3;
-    top: 0%;
-}
 
 
 /*responsive mobile width*/
@@ -182,19 +184,24 @@ a {
        text-align: center;
     }
 
-/*form section*/
+/*contact page*/
 
-#formCon {
-    width: 50%;
-    padding: 5%;
-}
-
-.form-div {
+#contactSectionWrapper {
     display: flex;
     flex-direction: column;
-    width: 70%;
 }
 
+#formCon {
+    width: 45%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+#contactBlurbDiv {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+}
   
 }
 
@@ -206,7 +213,6 @@ a {
 #projects {
     width: 100%;
 }
-
 
 #projGridDiv {
     display: grid;
@@ -222,8 +228,24 @@ a {
    text-align: center;
 }
 
-/*skills section*/
+/*contact page*/
 
+#contactSectionWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#formCon {
+    width: 40%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+#contactBlurbDiv {
+    width: 50%;
+    background-color: black;
+    height:85vh;
+}
 
 
 }

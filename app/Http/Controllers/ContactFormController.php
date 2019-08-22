@@ -6,19 +6,20 @@ use Illuminate\Http\Request;
 
 class ContactFormController extends Controller
 {
-    public function create()
+    public function contactCreate()
     {
         return view('contact');
     }
 
-    public function store(Request $request)
+    public function contactStore(Request $request)
     {
-        $validatedData = $request->all([
+        $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required',
-        ]);
-
-        return $request;
+            'message' => 'required'
+            ]);
+           
+            contactCreate::create($request->all());
+           return back()->with('success', 'Thanks for contacting us!');
     }
 }

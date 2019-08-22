@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('contact', 'ContactFormController@create');
-Route::post('contact', 'ContactFormController@store');
+Route::get('contact', 'ContactFormController@contactCreate');
+Route::post('contact', 'ContactFormController@contactStore');
